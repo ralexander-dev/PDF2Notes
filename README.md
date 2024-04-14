@@ -5,6 +5,7 @@
 * Before using the application you'll need to have an OpenAI API key. If you don't already have one, see OpenAI's API documentation for instructions on this step.
 ## Dependencies
 * You'll need the following dependencies installed in order for this application to function. (_**Note:** Later this repository will be updated to include a makefile and handle dependency installation in a simpler way. For now, manual installation is the only option_)
+*
     ###Python >v3.10
     Debian
     ```bash
