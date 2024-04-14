@@ -5,31 +5,31 @@
 * Before using the application you'll need to have an OpenAI API key. If you don't already have one, see OpenAI's API documentation for instructions on this step.
 ## Dependencies
 * You'll need the following dependencies installed in order for this application to function. (_**Note:** Later this repository will be updated to include a makefile and handle dependency installation in a simpler way. For now, manual installation is the only option_)
-    * **Python >v3.10**
-    ### Debian
+    ###Python >v3.10**
+    Debian
     ```bash
         apt-get install python3 python3-dev
     ```
-    * **OpenAI**
+    ###OpenAI**
     ```bash
         pip install openai
     ```
-    * **dotenv v1.0.1**
+    ###dotenv v1.0.1**
     ```bash
         pip install python-dotenv
     ```
-    * **tkinter v8.5**
+    ###tkinter v8.5**
     ```bash
         pip install tk
     ```
-    * **customtkinter v5.2.2**
+    ###customtkinter v5.2.2**
     ```bash
         pip install customtkinter
     ```
     ```bash
         pip install customtkinter --upgrade
     ```
-    * **docx v1.1.0**
+    ###docx v1.1.0**
     ```bash
         pip install python-docx
     ```
