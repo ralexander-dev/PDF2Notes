@@ -13,29 +13,29 @@
 * You'll need the following dependencies installed in order for this application to function. (_**Note:** Later this repository will be updated to include a makefile and handle dependency installation in a simpler way. For now, manual installation is the only option_)
     Python >v3.10
     Debian
-        ```bash
-            apt-get install python3 python3-dev
-        ```
+    ```bash
+        apt-get install python3 python3-dev
+    ```
     OpenAI
-        ```bash
-            pip install openai
-        ```
+    ```bash
+        pip install openai
+    ```
     dotenv v1.0.1
-        ```bash
-            pip install python-dotenv
-        ```
+    ```bash
+        pip install python-dotenv
+    ```
     tkinter v8.5
-        ```bash
-            pip install tk
-        ```
+    ```bash
+        pip install tk
+    ```
     customtkinter v5.2.2
-        ```bash
-            pip install customtkinter
-        ```
-        ```bash
-            pip install customtkinter --upgrade
-        ```
+    ```bash
+        pip install customtkinter
+    ```
+    ```bash
+        pip install customtkinter --upgrade
+    ```
     docx v1.1.0
-        ```bash
-            pip install python-docx
-        ```
+    ```bash
+        pip install python-docx
+    ```
