@@ -21,6 +21,7 @@ def myReader(pdfPath, docxPath):
         # Check for unreadable or blank pages
         if pdfText == "":
             print("No text could be extracted from the document. Ensure that the file is an original PDF and not a scanned document.")
+            return 1
         # if readable, call GPT API to translate page
         else:
             gptReply = GPT.CustomGPT(pdfText)
@@ -29,4 +30,5 @@ def myReader(pdfPath, docxPath):
         wr.saveNotes(docxPath, gptReply)
         print(f"Completed Page: {(pageNum+1):d} of {len(pdfReader.pages):d}")
     pdfFile.close() # Close PDF file
+    return 0
 

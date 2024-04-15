@@ -60,8 +60,14 @@ class Root(ctk.CTk):
         if destPath:
             self.runButton.selectedPath = destPath # Store the file path in the button object
 
-            Read.myReader(self.readInSelectButton.selectedPath, self.runButton.selectedPath) # Call the PDF reader, passing both paths. Reader will call docx writer.
-
+            readStatus = Read.myReader(self.readInSelectButton.selectedPath, self.runButton.selectedPath) # Call the PDF reader, passing both paths. Reader will call docx writer.
+            if readStatus == 1:
+                print("Error: No text could be extracted from the document. Ensure that the file is an original PDF and not a scanned document.")
+                tk.messagebox.showerror("Error", "No text could be extracted from the document. Ensure that the file is an original PDF and not a scanned document.")
+            else:
+                print("Notes have been successfully created.")
+                tk.messagebox.showinfo("Success", "Notes have been created and saved.")
+                self.runButton.configure(state="disabled") # Disable the run button, as the user must select a new PDF to run the program again.
     # Load GUI elements
     def load(self):
         self.readInSelectButton.grid(row=1, column=0, padx=30, pady=50)
